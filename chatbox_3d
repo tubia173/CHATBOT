@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbox - Avatar 3D Interattivo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@r128/examples/js/controls/OrbitControls.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Avatar 3D Container -->
+        <div class="avatar-section">
+            <div id="canvas-container"></div>
+            <div class="avatar-info">
+                <h2>AI Assistente Militare</h2>
+                <p id="status-text">Pronto a conversare</p>
+            </div>
+        </div>
+
+        <!-- Chat Container -->
+        <div class="chat-section">
+            <div class="chat-header">
+                <h1>💬 Chat con Avatar 3D</h1>
+            </div>
+
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Ciao! Sono l'assistente AI militare. Scrivi quello che vuoi dire e ti ascolterò parlare!
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-wrapper">
+                <input 
+                    type="text" 
+                    id="chat-input" 
+                    placeholder="Scrivi il tuo messaggio..."
+                    autocomplete="off"
+                >
+                <button id="send-btn" onclick="sendMessage()">
+                    <span>Invia</span>
+                    <span class="icon">🎤</span>
+                </button>
+            </div>
+
+            <div class="info-box">
+                ℹ️ <strong>Tip:</strong> L'avatar animate le labbra mentre parla. Prova a scrivere lunghi messaggi!
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loading-indicator" class="loading-indicator">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
