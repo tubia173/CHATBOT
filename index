@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Avatar 3D Container -->
+        <!-- Avatar 3D -->
         <div class="avatar-section">
             <div id="canvas-container"></div>
             <div class="avatar-info">
@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <!-- Chat Container -->
+        <!-- Chat -->
         <div class="chat-section">
             <div class="chat-header">
                 <h1>💬 Chat con Avatar 3D</h1>
@@ -47,12 +47,12 @@
             </div>
 
             <div class="info-box">
-                ℹ️ <strong>Tip:</strong> L'avatar animate le labbra mentre parla. Prova a scrivere lunghi messaggi!
+                ℹ️ <strong>Tip:</strong> L'avatar anima le labbra mentre parla. Prova a scrivere messaggi lunghi!
             </div>
         </div>
     </div>
 
-    <!-- Loading Indicator -->
+    <!-- Loading -->
     <div id="loading-indicator" class="loading-indicator">
         <div class="spinner"></div>
     </div>
